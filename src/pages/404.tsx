@@ -1,6 +1,6 @@
-import React from "react"
+import * as React from "react"
 
-const NotFoundPage = ({ data, location }) => {
+const NotFoundPage = () => {
   return (
     <div>
       404
