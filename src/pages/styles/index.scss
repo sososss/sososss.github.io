@@ -3,7 +3,18 @@
 .index-wrap {
   display: flex;
 
+  @media screen and (max-width: $break-l) {
+    margin-top: 0.5rem;
+  }
+  @media screen and (max-width: $break-m) {
+    margin-top: 1rem;
+  }
+
   .index-post-list-wrap {
     width: 100%;
+
+    & > div {
+      margin: 0 auto;
+    }
   }
 }

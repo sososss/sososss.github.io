@@ -5,6 +5,35 @@
     cursor: pointer;
     color: inherit;
   }
+
+  svg {
+    color: #6a737d;
+    margin: 0;
+  }
+
+  &.light {
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color;
+      }
+    }
+  }
+
+  &.dark {
+    svg {
+      color: #a3aab3;
+    }
+
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color-d;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 #content {
@@ -12,11 +41,18 @@
   flex-direction: column;
   min-height: 100vh;
 
+  @media screen and (max-width: $break-m) {
+    padding-top: $header-height-m;
+  }
+  @media screen and (max-width: $break-s) {
+    padding-top: $header-height-s;
+  }
+
   main {
     flex-grow: 1;
   }
 
-  fotter {
+  footer {
     padding-top: 1rem;
     padding-bottom: 0.25rem;
     text-align: center;

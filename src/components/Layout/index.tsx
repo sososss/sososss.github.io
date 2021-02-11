@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import './layout.scss';
 
+import Header from '../Header';
+
 interface LayoutPropsType {
   children: React.ReactNode
 }
@@ -27,12 +29,14 @@ const Layout = (props: LayoutPropsType) => {
   return (
     <>
       <div id="layout">
+
         <div id="content">
+          <Header siteTitle={siteMetadata.title} />
           <main>{children}</main>
           <footer>
-            <span>{`@ ${new Date().getFullYear()} ${siteMetadata.author} | Theme by `}</span>
-            <a href={siteMetadata.siteUrl}>{siteMetadata.author}</a>
-            <span>{` | Built with `}</span>
+            <span>{`Copyright ⓒ `}</span>
+            <a href={siteMetadata.siteUrl}>{siteMetadata.author}.</a>
+            <span>{` All rights reserved. | Built with `}</span>
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>
