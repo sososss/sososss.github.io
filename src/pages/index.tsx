@@ -1,10 +1,16 @@
-import * as React from "react"
+import * as React from 'react';
+
+import Layout from '../components/Layout';
+
+import './styles/index.scss';
 
 const IndexPage = () => {
   return (
-    <div>
-      Index Page
-    </div>
+    <Layout>
+      <div className="index-wrap">
+        Index Page
+      </div>
+    </Layout>
   );
 }
 
