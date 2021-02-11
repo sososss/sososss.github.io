@@ -1,3 +1,9 @@
+@import '../../styles/variables.scss';
+
 .index-wrap {
   display: flex;
+
+  .index-post-list-wrap {
+    width: 100%;
+  }
 }

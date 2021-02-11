@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+#layout {
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex-grow: 1;
+  }
+
+  fotter {
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    user-select: none;
+  }
+}
