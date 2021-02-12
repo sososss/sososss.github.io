@@ -1,27 +1,29 @@
 module.exports = {
-  // Site Metadata
-  title: `Soso's Blog`,
-  description: `소소한 개발 이야기를 다루는..`,
-  author: `Soso's`,
-  language: 'ko-KR',
-  siteUrl: 'https://sososss.github.io',
+  /** Site MetaData (Required all)*/
+  title: `soso's Blog`,                           // (* Required)
+  description: `소소한 개발 이야기..`,          // (* Required)
+  author: `soso's`,                         // (* Required)
+  language: 'ko-KR',                        // (* Required) html lang, ex. 'en' | 'en-US' | 'ko' | 'ko-KR' | ...
+  siteUrl: 'https://sososss.github.io',                      // (* Required)
+    // ex.'https://junhobaik.github.io'
+    // ex.'https://junhobaik.github.io/' << X, Do not enter "/" at the end.
 
   /** Header */
   profileImageFileName: '', // include filename extension ex.'profile.jpg'
-  // The Profile image file is located at path "./images/"
-  // If the file does not exist, it is replaced by a random image.
+    // The Profile image file is located at path "./images/"
+    // If the file does not exist, it is replaced by a random image.
 
   /** Home > Bio information*/
-  comment: 'Enter your information in the "./config.js" file. ',
-  name: 'User Name',
+  comment: '소소한 개발 이야기..',
+  name: `soso's`,
   company: '',
-  location: 'Korea',
-  email: '',
-  website: 'https://sososss.github.io',    // ex.'https://sososss.github.io'
-  linkedin: '',                            // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
-  facebook: '',                            // ex.'https://www.facebook.com/zuck' or 'https://www.facebook.com/profile.php?id=000000000000000'
-  instagram: '',                           // ex.'https://www.instagram.com/junhobaik'
-  github: '',                              // ex.'https://github.com/junhobaik'
+  location: 'S.Korea',
+  email: 'sdk00sdk@naver.com',
+  website: 'https://sososss.github.io',           // ex.'https://junhobaik.github.io'
+  linkedin: '',                                                          // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
+  facebook: '',                                                          // ex.'https://www.facebook.com/zuck' or 'https://www.facebook.com/profile.php?id=000000000000000'
+  instagram: '',                                                         // ex.'https://www.instagram.com/junhobaik'
+  github: 'https://github.com/sososss',                                                            // ex.'https://github.com/junhobaik'
 
   /** Post */
   enablePostOfContents: true,     // TableOfContents activation (Type of Value: Boolean. Not String)
@@ -33,5 +35,5 @@ module.exports = {
   googleSearchConsole: '', // content value in HTML tag of google search console ownership verification. ex.'w-K42k14_I4ApiQKuVPbCRVV-GxlrqWxYoqO94KMbKo'
   googleAdsenseSlot: '',   // Google Adsense Slot. ex.'5214956675'
   googleAdsenseClient: '', // Google Adsense Client. ex.'ca-pub-5001380215831339'
-  // Please correct the adsense client number(ex.5001380215831339) in the './static/ads.txt' file.
+    // Please correct the adsense client number(ex.5001380215831339) in the './static/ads.txt' file.
 };
