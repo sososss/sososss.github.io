@@ -5,7 +5,8 @@
   "repository": "https://github.com/sososss/sososss.github.io.git",
   "author": "Devy <sdk00sdk@naver.com>",
   "scripts": {
-    "dev": "vuepress dev blog --open"
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog"
   },
   "license": "MIT",
   "devDependencies": {
