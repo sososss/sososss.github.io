@@ -6,11 +6,14 @@
   "author": "Devy <sdk00sdk@naver.com>",
   "scripts": {
     "dev": "vuepress dev blog",
-    "build": "vuepress build blog"
+    "build": "rimraf blog/.vuepress/dist && vuepress build blog",
+    "deploy": "npm run build && gh-pages -d blog/.vuepress/dist"
   },
   "license": "MIT",
   "devDependencies": {
     "@vuepress/theme-blog": "^2.3.3",
+    "gh-pages": "^3.2.3",
+    "rimraf": "^3.0.2",
     "vuepress": "^1.9.7"
   }
 }
