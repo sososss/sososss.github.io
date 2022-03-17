@@ -6,6 +6,8 @@ tags:
 summary: Phaser3로 게임 만들기 첫번째 강의 입니다!
 ---
 
+코드: [https://github.com/sososss/Phaser3-Tutorials/blob/main/Making-your-first-phaser3-game/part2.html](https://github.com/sososss/Phaser3-Tutorials/blob/main/Making-your-first-phaser3-game/part1.html)
+
 ## Phaser 란?
 
 Phaser는 HTML5 Game framework로 웹 브라우저에서 동작하는 게임을 쉽고 빠르게 만들수 있다. 웹의 장점인 그대로 누릴 수 있어 모바일이나 데스크탑에서 브라우저만 있다면 실행할 수 있다.
@@ -15,7 +17,7 @@ Phaser는 HTML5 Game framework로 웹 브라우저에서 동작하는 게임을 
 먼저 Phaser를 사용하기 위해서는 필요한 파일을 html 파일에 추가해줘야 한다.
 
 ```index.html```
-```
+``` Html
 <html>
   <head>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
@@ -30,7 +32,7 @@ Phaser는 HTML5 Game framework로 웹 브라우저에서 동작하는 게임을 
 
 이제 Phaser를 실행하기 위한 코드를 간략히 알아보겠다.
 
-```
+``` JavaScript
 <script>
   var config = {
       type: Phaser.AUTO,
@@ -47,14 +49,17 @@ Phaser는 HTML5 Game framework로 웹 브라우저에서 동작하는 게임을 
 
   function preload ()
   {
+    // Game이 생성 되기 전에 호출
   }
 
   function create ()
   {
+    // Game이 생성 될 때 호출
   }
 
   function update ()
   {
+    // 게임이 실행 되는 동안 반복적으로 호출
   }
 </script>
 ```
@@ -65,4 +70,7 @@ Phaser의 모든 API는 Phaser를 통해 접근할 수 있다. ```new Phaser.Gam
 
 이제 위 코드를 실행해보면 아래와 같이 800x600 크기의 검은색 빈 게임화면이 생성된걸 알 수 있다.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/sososs/wt8a6ype/1/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="600" src="//jsfiddle.net/sososs/wt8a6ype/1/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+
+참조: [https://phaser.io/tutorials/making-your-first-phaser-3-game/part1](https://phaser.io/tutorials/making-your-first-phaser-3-game/part1)
