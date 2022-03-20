@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vuepress dev blog",
     "build": "rimraf blog/.vuepress/dist && vuepress build blog",
-    "deploy": "npm run build && gh-pages -d blog/.vuepress/dist"
+    "deploy": "npm run build && gh-pages -d blog/.vuepress/dist -f"
   },
   "license": "MIT",
   "devDependencies": {
